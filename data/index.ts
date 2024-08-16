@@ -76,7 +76,7 @@ export const projects = [
     des: "A dynamic and visually captivating personal portfolio website built using Three.js, featuring interactive 3D elements and seamless animations.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
-    link: "https://vibhu.world/",
+    link: "https://vds29.vercel.app/",
   },
   {
     id: 2,
