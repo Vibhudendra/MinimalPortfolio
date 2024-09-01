@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
-import animationData from '@/data/Confetti.json'
+import animationData from "@/data/Confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import Image from "next/image";
@@ -51,13 +51,13 @@ export const BentoGridItem = ({
   const leftLists = ["Express", "ReactJs", "Typescript"];
   const rightLists = ["GitHub", "NextJS", "ThreeJs"];
 
-  const [copied, setCopied] = useState(false)  
+  const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('vibhudendra.s@gmail.com')
+    navigator.clipboard.writeText("vibhudendra.s@gmail.com");
 
-    setCopied(true)
-  }
+    setCopied(true);
+  };
   return (
     <div
       className={cn(
@@ -75,7 +75,7 @@ export const BentoGridItem = ({
           {img && (
             <Image
               src={img}
-              alt={'img'}
+              alt={"img"}
               className={cn(imgClassName, "object-cover object-center ")}
               width={32}
               height={32}
@@ -88,13 +88,13 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-             <Image
-             src={spareImg}
-             alt={'spareImg'}
-             className={cn(imgClassName, "object-cover object-center ")}
-             width={32}
-             height={32}
-           />
+            <Image
+              src={spareImg}
+              alt={"spareImg"}
+              className={cn(imgClassName, "object-cover object-center ")}
+              width={32}
+              height={32}
+            />
           )}
         </div>
 
@@ -153,27 +153,27 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={{
-                  loop: copied,
-                  autoplay:copied,
-                  animationData,
-                  rendererSettings :{
-                    preserveAspectRatio: 'xMidYMid Slice',
-                  }
-                }} />
+                <Lottie
+                  options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid Slice",
+                    },
+                  }}
+                />
               </div>
 
               <MagicButton
-               title={copied ? 'Email Address Copied' : 'Copy Email Address'}
-               icon={<IoCopyOutline/>}
-               position="left"
-               additionalClasses="!bg-[#161a31]"
-               handleClick={handleCopy}
+                title={copied ? "Email Address Copied" : "Copy Email Address"}
+                icon={<IoCopyOutline />}
+                position="left"
+                additionalClasses="!bg-[#161a31]"
+                handleClick={handleCopy}
               />
             </div>
           )}
-
-
         </div>
       </div>
     </div>
