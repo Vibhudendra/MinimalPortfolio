@@ -35,7 +35,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-2 text-sm md:text-lg lg:text-2xl mt-2">
-            Building Ideas into Engaging User Experiences
+          Clean Code. Clear Design. Engaging Experiences
           </p>
           <div className="flex items-center md:gap-3 gap-6 mt-4">
           {socialMedia.map((profile) => (
