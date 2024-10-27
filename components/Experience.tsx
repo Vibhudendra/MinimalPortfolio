@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        My <span className="text-blue-500">work experience</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -18,7 +18,7 @@ const Experience = () => {
             duration={Math.floor(Math.random() * 1000) + 10000}
             borderRadius="1.75rem"
             style={{
-              background: "rgb(31, 4, 36)",
+              background: "rgb(2, 3, 10)",
               backgroundColor:
                 "radial-gradient(circle, rgba(82,41,89,1) 0%, rgba(65,8,84,1) 43%)",
               borderRadius: `calc(1.75rem* 0.96)`,

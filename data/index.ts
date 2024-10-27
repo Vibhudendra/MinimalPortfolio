@@ -56,6 +56,7 @@ export const gridItems = [
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
     spareImg: "/grid.svg",
+    Link:"",
   },
   {
     id: 6,

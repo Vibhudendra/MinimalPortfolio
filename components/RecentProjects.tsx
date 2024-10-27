@@ -6,17 +6,17 @@ import Image from "next/image";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="pt-20" id="projects">
       <h1 className="heading">
-        A Selection of <span className="text-purple">Recent Projects</span>
+        A Selection of <span className="text-blue-500">Recent Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-32">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-16">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] sm:w-[570px] w-[80vw] items-center justify-center "
           >
-            <PinContainer title={title} href={link} className="">
+            <PinContainer title={title} href={link} className="mt-64">
               <div className="relative flex items-center justify-center sm:w-[570px] rounded-lg w-[80vw] overflow-hidden h-[26vh] lg:h-[50vh]">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
@@ -63,10 +63,10 @@ const RecentProjects = () => {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                  <p className="flex lg:text-xl md:text-xs text-sm text-blue-400">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-3" color="#5FA2F6" />
                 </div>
               </div>
             </PinContainer>
